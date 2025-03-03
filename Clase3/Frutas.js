@@ -1,5 +1,5 @@
 // Declaramos el arreglo de frutas
-const frutas = ['manzana', 'plátano', 'manzana', 'naranja', 'plátano', 'manzana', 'uva', 'naranja', 'uva', 'manzana'];
+const frutas = ['manzana', 'plátano', 'manzana', 'naranja', 'plátano', 'manzana', 'uva', 'naranja', 'mango', 'uva', 'manzana', 'kiwi', 'kiwi', 'kiwi', 'kiwi'];
 
 // Objeto para almacenar la cantidad de cada tipo de fruta
 const contadorFrutas = {};
@@ -14,21 +14,19 @@ for (let i = 0; i < frutas.length; i++) {
     }
 }
 
-console.log("Conteo usando for:", contadorFrutas);
+console.log("Conteo usando For:", contadorFrutas);
 
-// Reiniciar el objeto para el siguiente conteo
-const contadorFrutasWhile = {};
+const contadorFrutasW = {}; //Reiniciamos el valor del contador de frutas
 
-// Usando un bucle while para contar las frutas
-let index = 0;
-while (index < frutas.length) {
-    let fruta = frutas[index];
-    if (contadorFrutasWhile[fruta]) {
-        contadorFrutasWhile[fruta]++;
+let i = 0;
+while (i < frutas.length) {
+    let fruta = frutas[i];
+    if (contadorFrutasW[fruta]) {
+        contadorFrutasW[fruta]++; // Si ya existe, suma 1
     } else {
-        contadorFrutasWhile[fruta] = 1;
-    }
-    index++;
+        contadorFrutasW[fruta] = 1; // Si no existe, inicializa en 1
+    }    
+    i++;
 }
 
-console.log("Conteo usando while:", contadorFrutasWhile);
+console.log("Conteo usando While:", contadorFrutasW);
