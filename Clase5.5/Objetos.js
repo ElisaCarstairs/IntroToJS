@@ -30,10 +30,10 @@ const libro = {
     }
   };
   
-  // 🔹 Uso del objeto
+
   libro.describirLibro(); // Muestra la información del libro
   libro.agregarCapitulo("Capítulo 4: El Cazador de Sombras"); // Agrega un nuevo capítulo
   libro.eliminarCapitulo("Capítulo 2"); // Elimina un capítulo existente
   
-  console.log(libro.capitulos); // Muestra la lista actualizada de capítulos
+  console.log(libro.capitulos); 
   
