@@ -1,7 +1,7 @@
 const libro = {
-    titulo: "Cien años de soledad",
-    autor: "Gabriel García Márquez",
-    year: 1967,
+    titulo: "Ciudad de Hueso",
+    autor: "Cassandra Clare",
+    year: 2007,
     estado: "disponible",
     capitulos: ["Capítulo 1", "Capítulo 2", "Capítulo 3"],
   
@@ -32,7 +32,7 @@ const libro = {
   
   // 🔹 Uso del objeto
   libro.describirLibro(); // Muestra la información del libro
-  libro.agregarCapitulo("Capítulo 4"); // Agrega un nuevo capítulo
+  libro.agregarCapitulo("Capítulo 4: El Cazador de Sombras"); // Agrega un nuevo capítulo
   libro.eliminarCapitulo("Capítulo 2"); // Elimina un capítulo existente
   
   console.log(libro.capitulos); // Muestra la lista actualizada de capítulos
