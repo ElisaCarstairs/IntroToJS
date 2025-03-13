@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Contraseñas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Delius&family=Englebert&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <main>
+        <h1 class="Subtitulo navbar-fixed">
+            Generador de Contraseñas
+        </h1>
+        
+        <span id="password"></span>
+        <div class="controles" style="margin-top: 100px;">
+            <label for="length">Longitud: 
+                <span id="lengthValue">12</span> <!-- Valor inicial -->
+            </label>
+
+            <!-- El slider para elegir la longitud -->
+            <input 
+                type="range" 
+                id="length"
+                min="5" 
+                max="30" 
+                value="10"
+            />
+            <br>
+            <button onclick="genPass()">
+                Generar
+            </button>
+            <br>
+            <label><input type="checkbox" id="uppercase" checked> Incluir mayúsculas</label>
+            <label><input type="checkbox" id="numbers" checked> Incluir números</label>
+            <label><input type="checkbox" id="symbols" checked> Incluir símbolos</label>
+        </div>
+     </main>
+    <script src="passwords.js "></script>
+</body>
+</html>

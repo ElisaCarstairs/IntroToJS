@@ -1,0 +1,75 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    height: 100vh;
+    margin: 0;
+}
+h1 {	
+    font-family: Englebert;
+}
+#password {
+    font-size: 1.5rem; /* Más grande */
+    letter-spacing: 2px; /* Espacio entre letras */
+    cursor: pointer; /* Cambia el puntero */
+    transition: background-color 0.5s; /* Animación suave */
+}
+
+#password:hover {
+    background-color: rgb(255, 240, 210); /* Cambio de color al pasar el mouse */
+}
+.controles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(97, 68, 32);
+    background-color: rgb(250, 220, 245);
+    border: 1px solid rgb(184, 138, 176);
+    padding: 3px;
+    border-radius: 2rem;
+    font-family: Delius;
+    width: 70%;
+}
+span {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Delius;
+}
+button {
+    font-family:Sour Gummy;
+    background-color: rgb(181, 233, 253);
+    border-color: rgb(164, 155, 238);
+    border-radius: 15px;
+    padding: 5px;
+    color: rgb(51, 35, 16);
+    cursor: pointer;
+}
+.navbar-fixed {
+
+    top: 5px;
+    left: 50px;
+    width: 70%;
+    background-color: #ffebce;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    text-align: center;
+    z-index: 10; /* Asegura que la barra quede encima de otros elementos */
+    border-radius: 10px;
+}
+.control-longitud {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+label {
+    display: block;
+    color: rgb(97, 68, 32);
+    font-size: 22px;
+    margin-bottom: 0.5rem;
+}
+input {
+    cursor: move;
+    width: 300px;
+    background-color: white;
+}
