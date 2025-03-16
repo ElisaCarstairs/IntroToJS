@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog de Comida Saludable</title>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Delius&family=Englebert&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+        
+    <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon">
 </head>
 <body>
 
@@ -17,6 +22,7 @@
                 <li><a href="#">Consejos</a></li>
                 <li><a href="#">Sobre mí</a></li>
                 <li><a href="#">Contacto</a></li>
+                <li><a href="#">Comentarios</a></li>
             </ul>
         </nav>
     </header>
@@ -24,7 +30,7 @@
     <main>
         <section class="destacada">
             <article>
-                <img src="imagenes/ensalada.jpg" alt="Ensalada fresca con aguacate y quinoa">
+                <img src="Images/Ensalada1.jpg" alt="Ensalada fresca con aguacate y quinoa">
                 <h2>Receta destacada: Ensalada fresca de quinoa</h2>
                 <p>Una receta rápida, nutritiva y perfecta para el almuerzo. Llena de colores y sabores, ¡te encantará!</p>
                 <a href="#">Leer más</a>
@@ -35,34 +41,57 @@
             <h2>Últimas recetas</h2>
 
             <article>
-                <img src="imagenes/smoothie.jpg" alt="Smoothie de frutas rojas">
-                <h3>Smoothie energizante de frutas rojas</h3>
+                <img src="Images/5-Recetas-de-Smoothies.webp"Smoothie de frutas rojas">
+                <h3>5 ideas para Smoothies</h3>
                 <p>Ideal para comenzar el día con energía y vitaminas.</p>
-                <a href="#">Ver receta</a>
+                <a href="https://lohecocinadoyo.com/5-recetas-de-smoothies/">Ver receta</a>
             </article>
 
             <article>
-                <img src="imagenes/bowl.jpg" alt="Bowl de vegetales y arroz integral">
+                <img src="Images/Brown-Rice-Quinoa-Bowls03.jpg" alt="Bowl de vegetales y arroz integral">
                 <h3>Bowl de vegetales con arroz integral</h3>
                 <p>Una opción completa y balanceada para el almuerzo.</p>
-                <a href="#">Ver receta</a>
+                <a href="https://www.thefoodieskitchen.com/es/2019/09/26/tazones-de-arroz-integral-quinoa/">Ver receta</a>
             </article>
 
         </section>
 
-        <aside>
-            <h2>Tips de cocina</h2>
-            <ul>
-                <li>Cómo conservar hierbas frescas por más tiempo</li>
-                <li>Ideas para sustituir ingredientes comunes</li>
-                <li>Cómo organizar tu menú semanal</li>
-            </ul>
-        </aside>
+        <section class="comentarios-container">
+            <div class="comentarios-formulario">
+            <h2>Deja tu comentario</h2>
+            
+            <form id="form-comentario">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <br>
+                    <input type="text" id="nombre" required placeholder="Tu nombre">
+                </div>
+                <br>
+                <div>
+                    <label for="mensaje">Comentario:</label>
+                    <br>
+                    <textarea id="mensaje" rows="4" required placeholder="Escribe tu comentario aquí..."></textarea>
+                </div>
+                <div>
+                    <button type="submit">Publicar comentario</button>
+                </div>
+            </form>
+            <div id="lista-comentarios">
+                <h3>Comentarios recientes:</h3>
+                <!-- Comentarios se agregan aquí dinámicamente -->
+            </div>
+            </div>
+            <div class="comentarios_imagen">
+                <img src="Images/claves-comentarios-posts.png" alt="">
+            </div>
+
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Sabores Saludables. Todos los derechos reservados.</p>
     </footer>
+    <script src="script.js"></script>
 
 </body>
 </html>
